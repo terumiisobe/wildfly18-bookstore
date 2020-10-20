@@ -1,0 +1,376 @@
+2020-08-21 13:18:03,415 INFO  [org.jboss.modules] (main) JBoss Modules version 1.9.1.Final
+2020-08-21 13:18:04,905 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.11.Final
+2020-08-21 13:18:04,915 INFO  [org.jboss.threads] (main) JBoss Threads version 2.3.3.Final
+2020-08-21 13:18:05,179 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: WildFly Full 18.0.0.Final (WildFly Core 10.0.0.Final) starting
+2020-08-21 13:18:05,180 DEBUG [org.jboss.as.config] (MSC service thread 1-2) Configured system properties:
+	awt.toolkit = sun.awt.X11.XToolkit
+	file.encoding = UTF-8
+	file.separator = /
+	java.awt.graphicsenv = sun.awt.X11GraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.print.PSPrinterJob
+	java.class.path = /home/terumi/Documents/Desenvolvimento/wildfly-18.0.0.Final/jboss-modules.jar
+	java.class.version = 55.0
+	java.home = /usr/lib/jvm/java-11-openjdk-amd64
+	java.io.tmpdir = /tmp
+	java.library.path = /usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib
+	java.net.preferIPv4Stack = true
+	java.runtime.name = OpenJDK Runtime Environment
+	java.runtime.version = 11.0.7+10-post-Ubuntu-3ubuntu1
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 11
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Ubuntu
+	java.vendor.url = https://ubuntu.com/
+	java.vendor.url.bug = https://bugs.launchpad.net/ubuntu/+source/openjdk-lts
+	java.version = 11.0.7
+	java.version.date = 2020-04-14
+	java.vm.compressedOopsMode = 32-bit
+	java.vm.info = mixed mode, sharing
+	java.vm.name = OpenJDK 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 11
+	java.vm.vendor = Ubuntu
+	java.vm.version = 11.0.7+10-post-Ubuntu-3ubuntu1
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	jboss.bind.address = localhost
+	jboss.bind.address.management = localhost
+	jboss.home.dir = /home/terumi/Documents/Desenvolvimento/wildfly-18.0.0.Final
+	jboss.host.name = terumi-pc
+	jboss.modules.dir = /home/terumi/Documents/Desenvolvimento/wildfly-18.0.0.Final/modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = terumi-pc
+	jboss.qualified.host.name = terumi-pc
+	jboss.server.base.dir = /home/terumi/Documents/Desenvolvimento/wildfly-18.0.0.Final/standalone
+	jboss.server.config.dir = /home/terumi/Documents/Desenvolvimento/wildfly-18.0.0.Final/standalone/configuration
+	jboss.server.data.dir = /home/terumi/Documents/Desenvolvimento/wildfly-18.0.0.Final/standalone/data
+	jboss.server.deploy.dir = /home/terumi/Documents/Desenvolvimento/wildfly-18.0.0.Final/standalone/data/content
+	jboss.server.log.dir = /home/terumi/Documents/Desenvolvimento/wildfly-18.0.0.Final/standalone/log
+	jboss.server.name = terumi-pc
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /home/terumi/Documents/Desenvolvimento/wildfly-18.0.0.Final/standalone/tmp
+	jdk.debug = release
+	line.separator = 
+
+	logging.configuration = file:/home/terumi/Documents/Desenvolvimento/wildfly-18.0.0.Final/standalone/configuration/logging.properties
+	module.path = /home/terumi/Documents/Desenvolvimento/wildfly-18.0.0.Final/modules
+	org.jboss.boot.log.file = /home/terumi/Documents/Desenvolvimento/wildfly-18.0.0.Final/standalone/log/boot.log
+	org.jboss.logmanager.nocolor = true
+	org.jboss.resolver.warning = true
+	os.arch = amd64
+	os.name = Linux
+	os.version = 5.4.0-42-generic
+	path.separator = :
+	program.name = JBossTools: WildFly 18 at localhost
+	sun.arch.data.model = 64
+	sun.boot.library.path = /usr/lib/jvm/java-11-openjdk-amd64/lib
+	sun.cpu.endian = little
+	sun.cpu.isalist = 
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = org.jboss.modules.Main -mp /home/terumi/Documents/Desenvolvimento/wildfly-18.0.0.Final/modules org.jboss.as.standalone -b localhost --server-config=standalone.xml -Djboss.server.base.dir=/home/terumi/Documents/Desenvolvimento/wildfly-18.0.0.Final/standalone
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = unknown
+	sun.rmi.dgc.client.gcInterval = 3600000
+	sun.rmi.dgc.server.gcInterval = 3600000
+	user.country = US
+	user.dir = /home/terumi/Documents/Desenvolvimento/wildfly-18.0.0.Final/bin
+	user.home = /home/terumi
+	user.language = en
+	user.name = terumi
+	user.timezone = America/Sao_Paulo
+2020-08-21 13:18:05,182 DEBUG [org.jboss.as.config] (MSC service thread 1-2) VM Arguments: -Dprogram.name=JBossTools: WildFly 18 at localhost -Xms64m -Xmx512m -Dorg.jboss.resolver.warning=true -Djava.net.preferIPv4Stack=true -Dsun.rmi.dgc.client.gcInterval=3600000 -Dsun.rmi.dgc.server.gcInterval=3600000 -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dorg.jboss.boot.log.file=/home/terumi/Documents/Desenvolvimento/wildfly-18.0.0.Final/standalone/log/boot.log -Dlogging.configuration=file:/home/terumi/Documents/Desenvolvimento/wildfly-18.0.0.Final/standalone/configuration/logging.properties -Djboss.home.dir=/home/terumi/Documents/Desenvolvimento/wildfly-18.0.0.Final -Dorg.jboss.logmanager.nocolor=true --add-exports=java.base/sun.nio.ch=ALL-UNNAMED --add-exports=jdk.unsupported/sun.misc=ALL-UNNAMED --add-exports=jdk.unsupported/sun.reflect=ALL-UNNAMED --add-modules=java.se -Djboss.bind.address.management=localhost -Dfile.encoding=UTF-8 
+2020-08-21 13:18:07,543 INFO  [org.wildfly.security] (ServerService Thread Pool -- 26) ELY00001: WildFly Elytron version 1.10.3.Final
+2020-08-21 13:18:09,645 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/core-service=management/management-interface=http-interface' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2020-08-21 13:18:09,685 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 24) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/subsystem=undertow/server=default-server/https-listener=https' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2020-08-21 13:18:09,709 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) WFLYDS0004: Found bookstore.war in deployment directory. To trigger deployment create a file called bookstore.war.dodeploy
+2020-08-21 13:18:09,752 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2020-08-21 13:18:09,796 INFO  [org.xnio] (MSC service thread 1-4) XNIO version 3.7.3.Final
+2020-08-21 13:18:09,804 INFO  [org.xnio.nio] (MSC service thread 1-4) XNIO NIO Implementation Version 3.7.3.Final
+2020-08-21 13:18:09,868 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 51) WFLYCLINF0001: Activating Infinispan subsystem.
+2020-08-21 13:18:09,879 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 52) WFLYIO001: Worker 'default' has auto-configured to 16 core threads with 128 task threads based on your 8 available processors
+2020-08-21 13:18:09,900 INFO  [org.jboss.remoting] (MSC service thread 1-1) JBoss Remoting version 5.0.15.Final
+2020-08-21 13:18:09,901 INFO  [org.wildfly.extension.microprofile.config.smallrye._private] (ServerService Thread Pool -- 60) WFLYCONF0001: Activating WildFly MicroProfile Config Subsystem
+2020-08-21 13:18:09,902 INFO  [org.jboss.as.connector] (MSC service thread 1-7) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.4.17.Final)
+2020-08-21 13:18:09,924 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 70) WFLYSEC0002: Activating Security Subsystem
+2020-08-21 13:18:09,929 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 64) WFLYNAM0001: Activating Naming Subsystem
+2020-08-21 13:18:09,925 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 43) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+2020-08-21 13:18:09,939 INFO  [org.wildfly.extension.microprofile.health.smallrye] (ServerService Thread Pool -- 61) WFLYHEALTH0001: Activating Eclipse MicroProfile Health Subsystem
+2020-08-21 13:18:09,927 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 72) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2020-08-21 13:18:09,957 INFO  [org.wildfly.extension.microprofile.opentracing] (ServerService Thread Pool -- 63) WFLYTRACEXT0001: Activating MicroProfile OpenTracing Subsystem
+2020-08-21 13:18:09,956 INFO  [org.wildfly.extension.microprofile.metrics.smallrye] (ServerService Thread Pool -- 62) WFLYMETRICS0001: Activating Eclipse MicroProfile Metrics Subsystem
+2020-08-21 13:18:09,969 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 74) WFLYWS0002: Activating WebServices Extension
+2020-08-21 13:18:09,943 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) WFLYJCA0018: Started Driver service with driver-name = h2
+2020-08-21 13:18:09,941 INFO  [org.jboss.as.security] (MSC service thread 1-3) WFLYSEC0001: Current PicketBox version=5.0.3.Final
+2020-08-21 13:18:09,966 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 58) WFLYJSF0007: Activated the following JSF Implementations: [main]
+2020-08-21 13:18:10,151 INFO  [org.jboss.as.naming] (MSC service thread 1-3) WFLYNAM0003: Starting Naming Service
+2020-08-21 13:18:10,155 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-3) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2020-08-21 13:18:10,363 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 53) WFLYRS0016: RESTEasy version 3.9.0.Final
+2020-08-21 13:18:10,426 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0003: Undertow 2.0.26.Final starting
+2020-08-21 13:18:10,489 INFO  [org.jboss.as.ejb3] (MSC service thread 1-3) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 128 (per class), which is derived from thread worker pool sizing.
+2020-08-21 13:18:10,489 INFO  [org.jboss.as.ejb3] (MSC service thread 1-6) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 32 (per class), which is derived from the number of CPUs on this host.
+2020-08-21 13:18:10,788 INFO  [org.jboss.as.ejb3] (MSC service thread 1-6) WFLYEJB0493: EJB subsystem suspension complete
+2020-08-21 13:18:10,793 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 73) WFLYUT0014: Creating file handler for path '/home/terumi/Documents/Desenvolvimento/wildfly-18.0.0.Final/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2020-08-21 13:18:10,875 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0012: Started server default-server.
+2020-08-21 13:18:10,877 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0018: Host default-host starting
+2020-08-21 13:18:10,929 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
+2020-08-21 13:18:11,033 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 43) WFLYJCA0005: Deploying non-JDBC-compliant driver class com.mysql.cj.jdbc.Driver (version 8.0)
+2020-08-21 13:18:11,036 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-7) WFLYJCA0018: Started Driver service with driver-name = mysql
+2020-08-21 13:18:11,170 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) WFLYJCA0001: Bound data source [java:/benmk1]
+2020-08-21 13:18:11,170 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2020-08-21 13:18:11,826 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-4) WFLYDM0111: Keystore /home/terumi/Documents/Desenvolvimento/wildfly-18.0.0.Final/standalone/configuration/application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+2020-08-21 13:18:11,831 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-4) WFLYDS0013: Started FileSystemDeploymentService for directory /home/terumi/Documents/Desenvolvimento/wildfly-18.0.0.Final/standalone/deployments
+2020-08-21 13:18:11,861 INFO  [org.jboss.as.patching] (MSC service thread 1-6) WFLYPAT0050: WildFly Full cumulative patch ID is: base, one-off patches include: none
+2020-08-21 13:18:11,881 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0027: Starting deployment of "bookstore.war" (runtime-name: "bookstore.war")
+2020-08-21 13:18:11,969 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
+2020-08-21 13:18:12,271 INFO  [org.jboss.ws.common.management] (MSC service thread 1-8) JBWS022052: Starting JBossWS 5.3.0.Final (Apache CXF 3.3.3) 
+2020-08-21 13:18:13,398 INFO  [org.jboss.as.jpa] (MSC service thread 1-1) WFLYJPA0002: Read persistence.xml for primary
+2020-08-21 13:18:14,193 INFO  [org.jboss.weld.deployer] (MSC service thread 1-5) WFLYWELD0003: Processing weld deployment bookstore.war
+2020-08-21 13:18:15,047 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-8) ISPN000128: Infinispan version: Infinispan 'Infinity Minus ONE +2' 9.4.16.Final
+2020-08-21 13:18:15,178 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 76) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'bookstore.war#primary'
+2020-08-21 13:18:15,223 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-5) HV000001: Hibernate Validator 6.0.17.Final
+2020-08-21 13:18:15,229 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 76) HHH000204: Processing PersistenceUnitInfo [
+	name: primary
+	...]
+2020-08-21 13:18:15,373 INFO  [org.hibernate.Version] (ServerService Thread Pool -- 76) HHH000412: Hibernate Core {5.3.12.Final}
+2020-08-21 13:18:15,375 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 76) HHH000206: hibernate.properties not found
+2020-08-21 13:18:15,403 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-5) WFLYEJB0473: JNDI bindings for session bean named 'ItemDao' in deployment unit 'deployment "bookstore.war"' are as follows:
+
+	java:global/bookstore/ItemDao!dao.ItemDao
+	java:app/bookstore/ItemDao!dao.ItemDao
+	java:module/ItemDao!dao.ItemDao
+	ejb:/bookstore/ItemDao!dao.ItemDao?stateful
+	java:global/bookstore/ItemDao
+	java:app/bookstore/ItemDao
+	java:module/ItemDao
+
+2020-08-21 13:18:15,403 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-5) WFLYEJB0473: JNDI bindings for session bean named 'CustomerDao' in deployment unit 'deployment "bookstore.war"' are as follows:
+
+	java:global/bookstore/CustomerDao!dao.CustomerDao
+	java:app/bookstore/CustomerDao!dao.CustomerDao
+	java:module/CustomerDao!dao.CustomerDao
+	ejb:/bookstore/CustomerDao!dao.CustomerDao?stateful
+	java:global/bookstore/CustomerDao
+	java:app/bookstore/CustomerDao
+	java:module/CustomerDao
+
+2020-08-21 13:18:15,403 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-5) WFLYEJB0473: JNDI bindings for session bean named 'OrderDao' in deployment unit 'deployment "bookstore.war"' are as follows:
+
+	java:global/bookstore/OrderDao!dao.OrderDao
+	java:app/bookstore/OrderDao!dao.OrderDao
+	java:module/OrderDao!dao.OrderDao
+	ejb:/bookstore/OrderDao!dao.OrderDao?stateful
+	java:global/bookstore/OrderDao
+	java:app/bookstore/OrderDao
+	java:module/OrderDao
+
+2020-08-21 13:18:15,814 WARN  [org.jboss.as.jaxrs] (MSC service thread 1-3) WFLYRS0018: Explicit usage of Jackson annotation in a JAX-RS deployment; the system will disable JSON-B processing for the current deployment. Consider setting the 'resteasy.preferJacksonOverJsonB' property to 'false' to restore JSON-B.
+2020-08-21 13:18:15,815 WARN  [org.jboss.as.jaxrs] (MSC service thread 1-3) WFLYRS0015: No Servlet declaration found for JAX-RS application.  In bookstore.war either provide a class that extends javax.ws.rs.core.Application or declare a servlet class in web.xml.
+2020-08-21 13:18:15,855 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 77) WFLYCLINF0002: Started client-mappings cache from ejb container
+2020-08-21 13:18:15,865 INFO  [org.hibernate.annotations.common.Version] (ServerService Thread Pool -- 76) HCANN000001: Hibernate Commons Annotations {5.0.5.Final}
+2020-08-21 13:18:15,876 INFO  [org.jboss.weld.Version] (MSC service thread 1-3) WELD-000900: 3.1.2 (Final)
+2020-08-21 13:18:16,130 INFO  [org.jboss.ws.cxf.metadata] (MSC service thread 1-3) JBWS024061: Adding service endpoint metadata: id=soap.Service
+ address=http://localhost:8080/bookstore/Service
+ implementor=soap.Service
+ serviceName={http://soap/}ServiceService
+ portName={http://soap/}ServicePort
+ annotationWsdlLocation=null
+ wsdlLocationOverride=null
+ mtomEnabled=false
+2020-08-21 13:18:16,837 INFO  [org.apache.cxf.wsdl.service.factory.ReflectionServiceFactoryBean] (MSC service thread 1-3) Creating Service {http://soap/}ServiceService from class soap.Service
+2020-08-21 13:18:17,290 INFO  [org.apache.cxf.endpoint.ServerImpl] (MSC service thread 1-3) Setting the server's publish address to be http://localhost:8080/bookstore/Service
+2020-08-21 13:18:17,386 INFO  [org.jboss.ws.cxf.deployment] (MSC service thread 1-3) JBWS024074: WSDL published to: file:/home/terumi/Documents/Desenvolvimento/wildfly-18.0.0.Final/standalone/data/wsdl/bookstore.war/ServiceService.wsdl
+2020-08-21 13:18:17,438 INFO  [org.jboss.as.webservices] (MSC service thread 1-7) WFLYWS0003: Starting service jboss.ws.endpoint."bookstore.war"."soap.Service"
+2020-08-21 13:18:17,659 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 76) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'bookstore.war#primary'
+2020-08-21 13:18:17,692 ERROR [stderr] (ServerService Thread Pool -- 76) Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+2020-08-21 13:18:18,135 WARN  [org.jboss.jca.core.connectionmanager.pool.strategy.OnePool] (ServerService Thread Pool -- 76) IJ000604: Throwable while attempting to get a new connection: null: javax.resource.ResourceException: IJ031084: Unable to create connection
+	at org.jboss.ironjacamar.jdbcadapters@1.4.17.Final//org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.createLocalManagedConnection(LocalManagedConnectionFactory.java:345)
+	at org.jboss.ironjacamar.jdbcadapters@1.4.17.Final//org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.getLocalManagedConnection(LocalManagedConnectionFactory.java:352)
+	at org.jboss.ironjacamar.jdbcadapters@1.4.17.Final//org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.createManagedConnection(LocalManagedConnectionFactory.java:287)
+	at org.jboss.ironjacamar.impl@1.4.17.Final//org.jboss.jca.core.connectionmanager.pool.mcp.SemaphoreConcurrentLinkedDequeManagedConnectionPool.createConnectionEventListener(SemaphoreConcurrentLinkedDequeManagedConnectionPool.java:1328)
+	at org.jboss.ironjacamar.impl@1.4.17.Final//org.jboss.jca.core.connectionmanager.pool.mcp.SemaphoreConcurrentLinkedDequeManagedConnectionPool.getConnection(SemaphoreConcurrentLinkedDequeManagedConnectionPool.java:499)
+	at org.jboss.ironjacamar.impl@1.4.17.Final//org.jboss.jca.core.connectionmanager.pool.AbstractPool.getSimpleConnection(AbstractPool.java:632)
+	at org.jboss.ironjacamar.impl@1.4.17.Final//org.jboss.jca.core.connectionmanager.pool.AbstractPool.getConnection(AbstractPool.java:604)
+	at org.jboss.ironjacamar.impl@1.4.17.Final//org.jboss.jca.core.connectionmanager.AbstractConnectionManager.getManagedConnection(AbstractConnectionManager.java:624)
+	at org.jboss.ironjacamar.impl@1.4.17.Final//org.jboss.jca.core.connectionmanager.tx.TxConnectionManagerImpl.getManagedConnection(TxConnectionManagerImpl.java:440)
+	at org.jboss.ironjacamar.impl@1.4.17.Final//org.jboss.jca.core.connectionmanager.AbstractConnectionManager.allocateConnection(AbstractConnectionManager.java:789)
+	at org.jboss.ironjacamar.jdbcadapters@1.4.17.Final//org.jboss.jca.adapters.jdbc.WrapperDataSource.getConnection(WrapperDataSource.java:151)
+	at org.jboss.as.connector@18.0.0.Final//org.jboss.as.connector.subsystems.datasources.WildFlyDataSource.getConnection(WildFlyDataSource.java:64)
+	at org.hibernate@5.3.12.Final//org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate@5.3.12.Final//org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180)
+	at org.hibernate@5.3.12.Final//org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68)
+	at org.hibernate@5.3.12.Final//org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate@5.3.12.Final//org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:94)
+	at org.hibernate@5.3.12.Final//org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate@5.3.12.Final//org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
+	at org.hibernate@5.3.12.Final//org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate@5.3.12.Final//org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:152)
+	at org.hibernate@5.3.12.Final//org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286)
+	at org.hibernate@5.3.12.Final//org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243)
+	at org.hibernate@5.3.12.Final//org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate@5.3.12.Final//org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:179)
+	at org.hibernate@5.3.12.Final//org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:119)
+	at org.hibernate@5.3.12.Final//org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:904)
+	at org.hibernate@5.3.12.Final//org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:935)
+	at org.hibernate.jipijapa-hibernate5-3@18.0.0.Final//org.jboss.as.jpa.hibernate5.TwoPhaseBootstrapImpl.build(TwoPhaseBootstrapImpl.java:44)
+	at org.jboss.as.jpa@18.0.0.Final//org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1$1.run(PersistenceUnitServiceImpl.java:170)
+	at org.jboss.as.jpa@18.0.0.Final//org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1$1.run(PersistenceUnitServiceImpl.java:128)
+	at org.wildfly.security.elytron-private@1.10.3.Final//org.wildfly.security.manager.WildFlySecurityManager.doChecked(WildFlySecurityManager.java:658)
+	at org.jboss.as.jpa@18.0.0.Final//org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1.run(PersistenceUnitServiceImpl.java:212)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:1982)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1486)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1377)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.JBossThread.run(JBossThread.java:485)
+Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost'
+	at com.mysql@8.0.21//com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql@8.0.21//com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql@8.0.21//com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql@8.0.21//com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836)
+	at com.mysql@8.0.21//com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql@8.0.21//com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+	at com.mysql@8.0.21//com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:197)
+	at org.jboss.ironjacamar.jdbcadapters@1.4.17.Final//org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.createLocalManagedConnection(LocalManagedConnectionFactory.java:321)
+	... 38 more
+
+2020-08-21 13:18:18,137 WARN  [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator] (ServerService Thread Pool -- 76) HHH000342: Could not obtain connection to query metadata : javax.resource.ResourceException: IJ000453: Unable to get managed connection for java:/benmk1
+2020-08-21 13:18:18,191 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 76) HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-08-21 13:18:18,203 INFO  [org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl] (ServerService Thread Pool -- 76) HHH000422: Disabling contextual LOB creation as connection was null
+2020-08-21 13:18:18,228 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 76) Envers integration enabled? : true
+2020-08-21 13:18:19,548 INFO  [io.smallrye.metrics] (MSC service thread 1-6) MicroProfile: Metrics activated
+2020-08-21 13:18:20,690 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 76) WFLYUT0021: Registered web context: '/bookstore' for server 'default-server'
+2020-08-21 13:18:20,955 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 44) WFLYSRV0010: Deployed "bookstore.war" (runtime-name : "bookstore.war")
+2020-08-21 13:18:21,038 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2020-08-21 13:18:21,041 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2020-08-21 13:18:21,041 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2020-08-21 13:18:21,042 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 18.0.0.Final (WildFly Core 10.0.0.Final) started in 19119ms - Started 527 of 737 services (376 services are lazy, passive or on-demand)
+2020-08-21 13:34:13,245 WARNING [org.apache.cxf.phase.PhaseInterceptorChain] (default task-1) Interceptor for {http://soap/}ServiceService#{http://soap/}home has thrown exception, unwinding now: org.apache.cxf.interceptor.Fault: Unmarshalling Error: For input string: "?" 
+	at org.apache.cxf.impl//org.apache.cxf.jaxb.JAXBEncoderDecoder.unmarshall(JAXBEncoderDecoder.java:932)
+	at org.apache.cxf.impl//org.apache.cxf.jaxb.JAXBEncoderDecoder.unmarshall(JAXBEncoderDecoder.java:738)
+	at org.apache.cxf.impl//org.apache.cxf.jaxb.io.DataReaderImpl.read(DataReaderImpl.java:170)
+	at org.apache.cxf.impl//org.apache.cxf.wsdl.interceptors.DocLiteralInInterceptor.handleMessage(DocLiteralInInterceptor.java:109)
+	at org.apache.cxf@3.3.3//org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:308)
+	at org.apache.cxf@3.3.3//org.apache.cxf.transport.ChainInitiationObserver.onMessage(ChainInitiationObserver.java:121)
+	at org.apache.cxf.impl//org.apache.cxf.transport.http.AbstractHTTPDestination.invoke(AbstractHTTPDestination.java:267)
+	at org.jboss.ws.cxf.jbossws-cxf-server@5.3.0.Final//org.jboss.wsf.stack.cxf.RequestHandlerImpl.handleHttpRequest(RequestHandlerImpl.java:110)
+	at org.jboss.ws.cxf.jbossws-cxf-server@5.3.0.Final//org.jboss.wsf.stack.cxf.transport.ServletHelper.callRequestHandler(ServletHelper.java:134)
+	at org.jboss.ws.cxf.jbossws-cxf-server@5.3.0.Final//org.jboss.wsf.stack.cxf.CXFServletExt.invoke(CXFServletExt.java:88)
+	at org.apache.cxf.impl//org.apache.cxf.transport.servlet.AbstractHTTPServlet.handleRequest(AbstractHTTPServlet.java:301)
+	at org.apache.cxf.impl//org.apache.cxf.transport.servlet.AbstractHTTPServlet.doPost(AbstractHTTPServlet.java:220)
+	at javax.servlet.api@2.0.0.Final//javax.servlet.http.HttpServlet.service(HttpServlet.java:523)
+	at org.jboss.ws.cxf.jbossws-cxf-server@5.3.0.Final//org.jboss.wsf.stack.cxf.CXFServletExt.service(CXFServletExt.java:136)
+	at org.jboss.ws.spi@3.2.3.Final//org.jboss.wsf.spi.deployment.WSFServlet.service(WSFServlet.java:140)
+	at javax.servlet.api@2.0.0.Final//javax.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at io.undertow.servlet@2.0.26.Final//io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:74)
+	at io.undertow.servlet@2.0.26.Final//io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:129)
+	at io.opentracing.contrib.opentracing-jaxrs2//io.opentracing.contrib.jaxrs2.server.SpanFinishingFilter.doFilter(SpanFinishingFilter.java:52)
+	at io.undertow.servlet@2.0.26.Final//io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:61)
+	at io.undertow.servlet@2.0.26.Final//io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+	at io.undertow.servlet@2.0.26.Final//io.undertow.servlet.handlers.FilterHandler.handleRequest(FilterHandler.java:84)
+	at io.undertow.servlet@2.0.26.Final//io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62)
+	at io.undertow.servlet@2.0.26.Final//io.undertow.servlet.handlers.ServletChain$1.handleRequest(ServletChain.java:68)
+	at io.undertow.servlet@2.0.26.Final//io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
+	at org.wildfly.extension.undertow@18.0.0.Final//org.wildfly.extension.undertow.security.SecurityContextAssociationHandler.handleRequest(SecurityContextAssociationHandler.java:78)
+	at io.undertow.core@2.0.26.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet@2.0.26.Final//io.undertow.servlet.handlers.RedirectDirHandler.handleRequest(RedirectDirHandler.java:68)
+	at io.undertow.servlet@2.0.26.Final//io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:132)
+	at io.undertow.servlet@2.0.26.Final//io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57)
+	at io.undertow.core@2.0.26.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.core@2.0.26.Final//io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46)
+	at io.undertow.servlet@2.0.26.Final//io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64)
+	at io.undertow.core@2.0.26.Final//io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:60)
+	at io.undertow.servlet@2.0.26.Final//io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:77)
+	at io.undertow.core@2.0.26.Final//io.undertow.security.handlers.NotificationReceiverHandler.handleRequest(NotificationReceiverHandler.java:50)
+	at io.undertow.core@2.0.26.Final//io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43)
+	at io.undertow.core@2.0.26.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at org.wildfly.extension.undertow@18.0.0.Final//org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:61)
+	at io.undertow.core@2.0.26.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at org.wildfly.extension.undertow@18.0.0.Final//org.wildfly.extension.undertow.deployment.GlobalRequestControllerHandler.handleRequest(GlobalRequestControllerHandler.java:68)
+	at io.undertow.core@2.0.26.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet@2.0.26.Final//io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:269)
+	at io.undertow.servlet@2.0.26.Final//io.undertow.servlet.handlers.ServletInitialHandler.access$100(ServletInitialHandler.java:78)
+	at io.undertow.servlet@2.0.26.Final//io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:133)
+	at io.undertow.servlet@2.0.26.Final//io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:130)
+	at io.undertow.servlet@2.0.26.Final//io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:48)
+	at io.undertow.servlet@2.0.26.Final//io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
+	at org.wildfly.extension.undertow@18.0.0.Final//org.wildfly.extension.undertow.security.SecurityContextThreadSetupAction.lambda$create$0(SecurityContextThreadSetupAction.java:105)
+	at org.wildfly.extension.undertow@18.0.0.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1504)
+	at org.wildfly.extension.undertow@18.0.0.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1504)
+	at org.wildfly.extension.undertow@18.0.0.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1504)
+	at org.wildfly.extension.undertow@18.0.0.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1504)
+	at org.wildfly.extension.undertow@18.0.0.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1504)
+	at io.undertow.servlet@2.0.26.Final//io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:249)
+	at io.undertow.servlet@2.0.26.Final//io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:78)
+	at io.undertow.servlet@2.0.26.Final//io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:99)
+	at io.undertow.core@2.0.26.Final//io.undertow.server.Connectors.executeRootHandler(Connectors.java:376)
+	at io.undertow.core@2.0.26.Final//io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:830)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:1982)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1486)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1377)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: javax.xml.bind.UnmarshalException
+ - with linked exception:
+[com.sun.istack.SAXParseException2; lineNumber: 6; columnNumber: 18; For input string: "?"]
+	at com.sun.xml.bind@2.3.1//com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallerImpl.handleStreamException(UnmarshallerImpl.java:483)
+	at com.sun.xml.bind@2.3.1//com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallerImpl.unmarshal0(UnmarshallerImpl.java:417)
+	at com.sun.xml.bind@2.3.1//com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallerImpl.unmarshal(UnmarshallerImpl.java:394)
+	at org.apache.cxf.impl//org.apache.cxf.jaxb.JAXBEncoderDecoder.doUnmarshal(JAXBEncoderDecoder.java:881)
+	at org.apache.cxf.impl//org.apache.cxf.jaxb.JAXBEncoderDecoder.access$200(JAXBEncoderDecoder.java:103)
+	at org.apache.cxf.impl//org.apache.cxf.jaxb.JAXBEncoderDecoder$3.run(JAXBEncoderDecoder.java:920)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at org.apache.cxf.impl//org.apache.cxf.jaxb.JAXBEncoderDecoder.unmarshall(JAXBEncoderDecoder.java:918)
+	... 63 more
+Caused by: com.sun.istack.SAXParseException2; lineNumber: 6; columnNumber: 18; For input string: "?"
+	at com.sun.xml.bind@2.3.1//com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext.handleEvent(UnmarshallingContext.java:744)
+	at com.sun.xml.bind@2.3.1//com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext.handleError(UnmarshallingContext.java:771)
+	at com.sun.xml.bind@2.3.1//com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext.handleError(UnmarshallingContext.java:767)
+	at com.sun.xml.bind@2.3.1//com.sun.xml.bind.v2.runtime.unmarshaller.Loader.handleParseConversionException(Loader.java:275)
+	at com.sun.xml.bind@2.3.1//com.sun.xml.bind.v2.runtime.unmarshaller.LeafPropertyLoader.text(LeafPropertyLoader.java:69)
+	at com.sun.xml.bind@2.3.1//com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext.text(UnmarshallingContext.java:590)
+	at com.sun.xml.bind@2.3.1//com.sun.xml.bind.v2.runtime.unmarshaller.StAXStreamConnector.processText(StAXStreamConnector.java:338)
+	at com.sun.xml.bind@2.3.1//com.sun.xml.bind.v2.runtime.unmarshaller.StAXStreamConnector.handleEndElement(StAXStreamConnector.java:216)
+	at com.sun.xml.bind@2.3.1//com.sun.xml.bind.v2.runtime.unmarshaller.StAXStreamConnector.bridge(StAXStreamConnector.java:185)
+	at com.sun.xml.bind@2.3.1//com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallerImpl.unmarshal0(UnmarshallerImpl.java:415)
+	... 69 more
+Caused by: javax.xml.bind.UnmarshalException: For input string: "?"
+ - with linked exception:
+[java.lang.NumberFormatException: For input string: "?"]
+	... 79 more
+Caused by: java.lang.NumberFormatException: For input string: "?"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Long.parseLong(Long.java:692)
+	at java.base/java.lang.Long.parseLong(Long.java:817)
+	at com.sun.xml.bind@2.3.1//com.sun.xml.bind.DatatypeConverterImpl._parseLong(DatatypeConverterImpl.java:133)
+	at com.sun.xml.bind@2.3.1//com.sun.xml.bind.v2.model.impl.RuntimeBuiltinLeafInfoImpl$19.parse(RuntimeBuiltinLeafInfoImpl.java:755)
+	at com.sun.xml.bind@2.3.1//com.sun.xml.bind.v2.model.impl.RuntimeBuiltinLeafInfoImpl$19.parse(RuntimeBuiltinLeafInfoImpl.java:753)
+	at com.sun.xml.bind@2.3.1//com.sun.xml.bind.v2.runtime.reflect.TransducedAccessor$CompositeTransducedAccessorImpl.parse(TransducedAccessor.java:239)
+	at com.sun.xml.bind@2.3.1//com.sun.xml.bind.v2.runtime.unmarshaller.LeafPropertyLoader.text(LeafPropertyLoader.java:65)
+	... 74 more
+
+2020-08-21 13:59:57,458 INFO  [org.jboss.as.server] (Thread-1) WFLYSRV0272: Suspending server
+2020-08-21 13:59:57,470 INFO  [org.jboss.as.ejb3] (Thread-1) WFLYEJB0493: EJB subsystem suspension complete
+2020-08-21 13:59:57,471 INFO  [org.jboss.as.server] (Thread-1) WFLYSRV0220: Server shutdown has been requested via an OS signal
+2020-08-21 13:59:57,522 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-3) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+2020-08-21 13:59:57,529 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 30) WFLYUT0022: Unregistered web context: '/bookstore' from server 'default-server'
+2020-08-21 13:59:57,541 INFO  [org.jboss.as.webservices] (MSC service thread 1-1) WFLYWS0004: Stopping service jboss.ws.endpoint."bookstore.war"."soap.Service"
+2020-08-21 13:59:57,568 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0019: Host default-host stopping
+2020-08-21 13:59:57,587 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 30) WFLYCLINF0003: Stopped client-mappings cache from ejb container
+2020-08-21 13:59:57,617 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2020-08-21 13:59:57,619 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 30) WFLYJPA0011: Stopping Persistence Unit (phase 2 of 2) Service 'bookstore.war#primary'
+2020-08-21 13:59:57,631 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2020-08-21 13:59:57,633 INFO  [org.hibernate.orm.beans] (ServerService Thread Pool -- 30) HHH10005004: Stopping BeanContainer : org.hibernate.resource.beans.container.internal.CdiBeanContainerExtendedAccessImpl@4a028732
+2020-08-21 13:59:57,650 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 30) WFLYJPA0011: Stopping Persistence Unit (phase 1 of 2) Service 'bookstore.war#primary'
+2020-08-21 13:59:57,653 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) WFLYJCA0010: Unbound data source [java:/benmk1]
+2020-08-21 13:59:57,660 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-4) WFLYJCA0019: Stopped Driver service with driver-name = mysql
+2020-08-21 13:59:57,768 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0008: Undertow HTTPS listener https suspending
+2020-08-21 13:59:57,771 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0008: Undertow HTTP listener default suspending
+2020-08-21 13:59:57,771 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 127.0.0.1:8443
+2020-08-21 13:59:57,772 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 127.0.0.1:8080
+2020-08-21 13:59:57,774 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0004: Undertow 2.0.26.Final stopping
+2020-08-21 13:59:57,787 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0028: Stopped deployment bookstore.war (runtime-name: bookstore.war) in 313ms
+2020-08-21 13:59:57,818 INFO  [org.jboss.as] (MSC service thread 1-6) WFLYSRV0050: WildFly Full 18.0.0.Final (WildFly Core 10.0.0.Final) stopped in 344ms

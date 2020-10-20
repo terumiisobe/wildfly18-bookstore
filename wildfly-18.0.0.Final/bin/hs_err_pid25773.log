@@ -1,0 +1,33 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGSEGV (0xb) at pc=0x00007f9e338530ad, pid=25773, tid=25789
+#
+# JRE version: OpenJDK Runtime Environment (11.0.7+10) (build 11.0.7+10-post-Ubuntu-3ubuntu1)
+# Java VM: OpenJDK 64-Bit Server VM (11.0.7+10-post-Ubuntu-3ubuntu1, mixed mode, sharing, tiered, compressed oops, g1 gc, linux-amd64)
+# Problematic frame:
+# C  [libjimage.so+0x30ad]
+#
+# Core dump will be written. Default location: Core dumps may be processed with "/lib/systemd/systemd-coredump %P %u %g %s %t 9223372036854775808 %h" (or dumping to /home/terumi/Documents/Desenvolvimento/wildfly-18.0.0.Final/bin/core.25773)
+#
+# If you would like to submit a bug report, please visit:
+#   https://bugs.launchpad.net/ubuntu/+source/openjdk-lts
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: -agentlib:jdwp=transport=dt_socket,suspend=y,address=localhost:45061 -Dprogram.name=JBossTools: WildFly 18 at localhost -Xms64m -Xmx512m -Dorg.jboss.resolver.warning=true -Djava.net.preferIPv4Stack=true -Dsun.rmi.dgc.client.gcInterval=3600000 -Dsun.rmi.dgc.server.gcInterval=3600000 -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dorg.jboss.boot.log.file=/home/terumi/Documents/Desenvolvimento/wildfly-18.0.0.Final/standalone/log/boot.log -Dlogging.configuration=file:/home/terumi/Documents/Desenvolvimento/wildfly-18.0.0.Final/standalone/configuration/logging.properties -Djboss.home.dir=/home/terumi/Documents/Desenvolvimento/wildfly-18.0.0.Final -Dorg.jboss.logmanager.nocolor=true --add-exports=java.base/sun.nio.ch=ALL-UNNAMED --add-exports=jdk.unsupported/sun.misc=ALL-UNNAMED --add-exports=jdk.unsupported/sun.reflect=ALL-UNNAMED --add-modules=java.se -Djboss.bind.address.management=localhost -Dfile.encoding=UTF-8 org.jboss.modules.Main -mp /home/terumi/Documents/Desenvolvimento/wildfly-18.0.0.Final/modules org.jboss.as.standalone -b localhost --server-config=standalone.xml -Djboss.server.base.dir=/home/terumi/Documents/Desenvolvimento/wildfly-18.0.0.Final/standalone
+
+Host: Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz, 8 cores, 7G, Linux Mint 20 Ulyana
+Time: Mon Sep 21 21:46:48 2020 -03 elapsed time: 1854 seconds (0d 0h 30m 54s)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x00007f9e2c0cf000):  JavaThread "Signal Dispatcher" daemon [_thread_in_vm, id=25789, stack(0x00007f9e300e7000,0x00007f9e301e8000)]
+
+Stack: [0x00007f9e300e7000,0x00007f9e301e8000],  sp=0x00007f9e301e51f0,  free space=1016k
+Native frames: (J=compiled Java code, A=aot compiled Java code, j=interpreted, Vv=VM code, C=native code)
+C  [libjimage.so+0x30ad]
+C  [libjimage.so+0x3da2]
+C  [libjimage.so+0x42b1]  JIMAGE_FindResource+0xf1
+V  [libjvm.so+0x57f081]
