@@ -1469,3 +1469,46 @@ Caused by: java.sql.SQLSyntaxErrorException: Table 'benmk1.order_register' doesn
 2020-10-26 18:19:50,532 INFO  [stdout] (default task-1) Hibernate: select distinct item0_.subject as col_0_0_ from item item0_
 2020-10-26 18:20:18,475 INFO  [stdout] (default task-1) ------home
 2020-10-26 18:20:18,476 INFO  [stdout] (default task-1) Hibernate: select distinct item0_.subject as col_0_0_ from item item0_
+2020-10-26 18:27:21,852 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 78) WFLYDR0009: Content /home/terumi/Documents/Desenvolvimento/wildfly18-bookstore/wildfly-18.0.0.Final/standalone/data/content/7a/44637e951750fd7877b381307767a8b8ed30d5 is obsolete and will be removed
+2020-10-26 18:27:21,907 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 78) WFLYDR0002: Content removed from location /home/terumi/Documents/Desenvolvimento/wildfly18-bookstore/wildfly-18.0.0.Final/standalone/data/content/7a/44637e951750fd7877b381307767a8b8ed30d5/content
+2020-10-26 18:27:21,907 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 78) WFLYDR0009: Content /home/terumi/Documents/Desenvolvimento/wildfly18-bookstore/wildfly-18.0.0.Final/standalone/data/content/04/7648dbba3cc9a58c197f03302b66a247bd4da3 is obsolete and will be removed
+2020-10-26 18:27:21,908 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 78) WFLYDR0002: Content removed from location /home/terumi/Documents/Desenvolvimento/wildfly18-bookstore/wildfly-18.0.0.Final/standalone/data/content/04/7648dbba3cc9a58c197f03302b66a247bd4da3/content
+2020-10-26 18:36:40,271 INFO  [org.jboss.as.server] (Thread-1) WFLYSRV0272: Suspending server
+2020-10-26 18:36:40,376 INFO  [org.jboss.as.ejb3] (Thread-1) WFLYEJB0493: EJB subsystem suspension complete
+2020-10-26 18:36:40,381 INFO  [org.jboss.as.server] (Thread-1) WFLYSRV0220: Server shutdown has been requested via an OS signal
+2020-10-26 18:36:40,528 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-7) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+2020-10-26 18:36:40,571 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 76) WFLYUT0022: Unregistered web context: '/bookstore-rest' from server 'default-server'
+2020-10-26 18:36:40,742 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0019: Host default-host stopping
+2020-10-26 18:36:40,787 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 88) WFLYCLINF0003: Stopped client-mappings cache from ejb container
+2020-10-26 18:36:40,806 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-8) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2020-10-26 18:36:40,815 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 88) WFLYJPA0011: Stopping Persistence Unit (phase 2 of 2) Service 'bookstore-rest.war#primary'
+2020-10-26 18:36:40,817 INFO  [org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl] (ServerService Thread Pool -- 88) HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2020-10-26 18:36:40,836 INFO  [stdout] (ServerService Thread Pool -- 88) Hibernate: alter table address drop foreign key FK40q2llu8chafk0wq48s39mhch
+2020-10-26 18:36:40,836 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2020-10-26 18:36:41,505 INFO  [stdout] (ServerService Thread Pool -- 88) Hibernate: alter table customer drop foreign key FKhiifv8j63g3hfvxaynxtev9ms
+2020-10-26 18:36:42,551 INFO  [stdout] (ServerService Thread Pool -- 88) Hibernate: alter table item drop foreign key FKfapu0tqjo1j0ks0dk0ekbbl0e
+2020-10-26 18:36:42,777 INFO  [stdout] (ServerService Thread Pool -- 88) Hibernate: alter table item_quantity drop foreign key FKk27o449e3tj5x56psw1b6o00o
+2020-10-26 18:36:42,968 INFO  [stdout] (ServerService Thread Pool -- 88) Hibernate: alter table order_line drop foreign key FKfy23monngyjy4cl06ujfd053v
+2020-10-26 18:36:43,183 INFO  [stdout] (ServerService Thread Pool -- 88) Hibernate: alter table order_line drop foreign key FKofl480wotvrd8y5lf861mwlj2
+2020-10-26 18:36:43,476 INFO  [stdout] (ServerService Thread Pool -- 88) Hibernate: alter table order_register drop foreign key FK5ix8365bxvpx0u34akw4e0o8r
+2020-10-26 18:36:43,668 INFO  [stdout] (ServerService Thread Pool -- 88) Hibernate: drop table if exists address
+2020-10-26 18:36:45,311 INFO  [stdout] (ServerService Thread Pool -- 88) Hibernate: drop table if exists author
+2020-10-26 18:36:45,916 INFO  [stdout] (ServerService Thread Pool -- 88) Hibernate: drop table if exists country
+2020-10-26 18:36:46,510 INFO  [stdout] (ServerService Thread Pool -- 88) Hibernate: drop table if exists customer
+2020-10-26 18:36:47,090 INFO  [stdout] (ServerService Thread Pool -- 88) Hibernate: drop table if exists hibernate_sequence
+2020-10-26 18:36:48,776 INFO  [stdout] (ServerService Thread Pool -- 88) Hibernate: drop table if exists item
+2020-10-26 18:36:49,429 INFO  [stdout] (ServerService Thread Pool -- 88) Hibernate: drop table if exists item_quantity
+2020-10-26 18:36:50,295 INFO  [stdout] (ServerService Thread Pool -- 88) Hibernate: drop table if exists order_line
+2020-10-26 18:36:52,371 INFO  [stdout] (ServerService Thread Pool -- 88) Hibernate: drop table if exists order_register
+2020-10-26 18:36:53,178 INFO  [stdout] (ServerService Thread Pool -- 88) Hibernate: drop table if exists shopping_session
+2020-10-26 18:36:55,381 INFO  [org.hibernate.orm.beans] (ServerService Thread Pool -- 88) HHH10005004: Stopping BeanContainer : org.hibernate.resource.beans.container.internal.CdiBeanContainerExtendedAccessImpl@26314acc
+2020-10-26 18:36:55,393 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 88) WFLYJPA0011: Stopping Persistence Unit (phase 1 of 2) Service 'bookstore-rest.war#primary'
+2020-10-26 18:36:55,397 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0010: Unbound data source [java:/benmk1]
+2020-10-26 18:36:55,439 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0008: Undertow HTTP listener default suspending
+2020-10-26 18:36:55,439 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0008: Undertow HTTPS listener https suspending
+2020-10-26 18:36:55,440 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 127.0.0.1:8443
+2020-10-26 18:36:55,440 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 127.0.0.1:8080
+2020-10-26 18:36:55,449 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0019: Stopped Driver service with driver-name = mysql
+2020-10-26 18:36:55,466 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0004: Undertow 2.0.26.Final stopping
+2020-10-26 18:36:56,919 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0028: Stopped deployment bookstore-rest.war (runtime-name: bookstore-rest.war) in 16500ms
+2020-10-26 18:36:56,953 INFO  [org.jboss.as] (MSC service thread 1-6) WFLYSRV0050: WildFly Full 18.0.0.Final (WildFly Core 10.0.0.Final) stopped in 16534ms
