@@ -23,14 +23,14 @@ INSERT INTO author(id, fullName) VALUES (4, 'John Green');
 INSERT INTO author(id, fullName) VALUES (5, 'Stephen King');
 
 CREATE TABLE country (
-  id bigint NOT NULL,
+  id bigint NOT NULL AUTO_INCREMENT,
   name varchar(255) DEFAULT NULL,
   PRIMARY KEY (id)
 );
 INSERT INTO country(id, name) VALUES (1, 'Brazil');
 
 CREATE TABLE address (
-  id bigint NOT NULL,
+  id bigint NOT NULL AUTO_INCREMENT,
   city varchar(255) DEFAULT NULL,
   state varchar(255) DEFAULT NULL,
   street varchar(255) DEFAULT NULL,
@@ -42,7 +42,7 @@ CREATE TABLE address (
 INSERT INTO address(id, street, city, state, countryId) VALUES (1, 'Rua Carneiro Lobo', 'Curitiba', 'Parana', 1);
 
 CREATE TABLE customer (
-  id bigint NOT NULL,
+  id bigint NOT NULL AUTO_INCREMENT,
   birthDate datetime(6) DEFAULT NULL,
   email varchar(255) DEFAULT NULL,
   fullName varchar(255) DEFAULT NULL,
@@ -57,12 +57,8 @@ CREATE TABLE customer (
 INSERT INTO customer(id, birthDate, email, fullName, password, phoneNumber, username, addressId) VALUES (1000, NULL, NULL, 'Terumi Isobe', 'password', NULL, 'terumiisobe', 1);
 INSERT INTO customer(id, birthDate, email, fullName, password, phoneNumber, username, addressId) VALUES (1001, NULL, NULL, 'João Grams', 'password', NULL, 'joaograms', 1);
 
-CREATE TABLE hibernate_sequence (
-  next_val bigint DEFAULT NULL
-);
-
 CREATE TABLE item (
-  id bigint NOT NULL,
+  id bigint NOT NULL AUTO_INCREMENT,
   availability int NOT NULL,
   cost decimal(19,2) NOT NULL,
   publicationDate datetime(6) DEFAULT NULL,
@@ -83,7 +79,7 @@ INSERT INTO item (id, title, authorId, subject, publisher, publicationDate, cost
 INSERT INTO item (id, title, authorId, subject, publisher, publicationDate, cost, availability, version) VALUES (6, 'It', 5, 'HORROR', NULL, CURRENT_TIMESTAMP, 70, 100000, 0);
 
 CREATE TABLE shopping_session (
-  id bigint NOT NULL,
+  id bigint NOT NULL AUTO_INCREMENT,
   customerId bigint NOT NULL,
   loginTime datetime(6) NOT NULL,
   totalPrice decimal(19,2) DEFAULT NULL,
@@ -91,7 +87,7 @@ CREATE TABLE shopping_session (
 );
 
 CREATE TABLE item_quantity (
-  id bigint NOT NULL,
+  id bigint NOT NULL AUTO_INCREMENT,
   itemId bigint NOT NULL,
   quantity int NOT NULL,
   cartId bigint DEFAULT NULL,
@@ -101,7 +97,7 @@ CREATE TABLE item_quantity (
 );
 
 CREATE TABLE order_register (
-  id bigint NOT NULL,
+  id bigint NOT NULL AUTO_INCREMENT,
   date datetime(6) DEFAULT NULL,
   status int DEFAULT NULL,
   totalPrice decimal(19,2) NOT NULL,
@@ -112,7 +108,7 @@ CREATE TABLE order_register (
 );
 
 CREATE TABLE order_line (
-  id bigint NOT NULL,
+  id bigint NOT NULL AUTO_INCREMENT,
   quantity int NOT NULL,
   itemId bigint NOT NULL,
   orderId bigint NOT NULL,
