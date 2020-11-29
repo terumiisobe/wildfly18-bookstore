@@ -1,15 +1,15 @@
 USE benmk1;
 
-DROP TABLE author;
-DROP TABLE country;
-DROP TABLE address;
-DROP TABLE customer;
-DROP TABLE hibernate_sequence;
-DROP TABLE item;
-DROP TABLE shopping_session;
-DROP TABLE item_quantity;
-DROP TABLE order_register;
-DROP TABLE order_line;
+DROP TABLE IF EXISTS order_line;
+DROP TABLE IF EXISTS order_register;
+DROP TABLE IF EXISTS item_quantity;
+DROP TABLE IF EXISTS shopping_session;
+DROP TABLE IF EXISTS item;
+DROP TABLE IF EXISTS hibernate_sequence;
+DROP TABLE IF EXISTS customer;
+DROP TABLE IF EXISTS address;
+DROP TABLE IF EXISTS country;
+DROP TABLE IF EXISTS author;
 
 CREATE TABLE author (
   id bigint NOT NULL,
@@ -22,14 +22,12 @@ INSERT INTO author(id, fullName) VALUES (3, 'J. R. R. Tolkien');
 INSERT INTO author(id, fullName) VALUES (4, 'John Green');
 INSERT INTO author(id, fullName) VALUES (5, 'Stephen King');
 
-
 CREATE TABLE country (
   id bigint NOT NULL,
   name varchar(255) DEFAULT NULL,
   PRIMARY KEY (id)
 );
 INSERT INTO country(id, name) VALUES (1, 'Brazil');
-
 
 CREATE TABLE address (
   id bigint NOT NULL,
@@ -41,6 +39,7 @@ CREATE TABLE address (
   KEY FK40q2llu8chafk0wq48s39mhch (countryId),
   CONSTRAINT FK40q2llu8chafk0wq48s39mhch FOREIGN KEY (countryId) REFERENCES benmk1.country (id)
 );
+INSERT INTO address(id, street, city, state, countryId) VALUES (1, 'Rua Carneiro Lobo', 'Curitiba', 'Parana', 1);
 
 CREATE TABLE customer (
   id bigint NOT NULL,
@@ -82,7 +81,6 @@ INSERT INTO item (id, title, authorId, subject, publisher, publicationDate, cost
 INSERT INTO item (id, title, authorId, subject, publisher, publicationDate, cost, availability, version) VALUES (4, 'The Fault in our Stars', 4, 'ROMANCE', NULL, CURRENT_TIMESTAMP, 50, 20000, 0);
 INSERT INTO item (id, title, authorId, subject, publisher, publicationDate, cost, availability, version) VALUES (5, 'Paper Towns', 4, 'ROMANCE', NULL, CURRENT_TIMESTAMP, 30, 300000, 0);
 INSERT INTO item (id, title, authorId, subject, publisher, publicationDate, cost, availability, version) VALUES (6, 'It', 5, 'HORROR', NULL, CURRENT_TIMESTAMP, 70, 100000, 0);
-
 
 CREATE TABLE shopping_session (
   id bigint NOT NULL,
