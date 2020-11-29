@@ -1,5 +1,16 @@
 USE benmk1;
 
+DROP TABLE author;
+DROP TABLE country;
+DROP TABLE address;
+DROP TABLE customer;
+DROP TABLE hibernate_sequence;
+DROP TABLE item;
+DROP TABLE shopping_session;
+DROP TABLE item_quantity;
+DROP TABLE order_register;
+DROP TABLE order_line;
+
 CREATE TABLE author (
   id bigint NOT NULL,
   fullName varchar(255) DEFAULT NULL,
