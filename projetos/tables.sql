@@ -23,14 +23,14 @@ INSERT INTO author(id, fullName) VALUES (4, 'John Green');
 INSERT INTO author(id, fullName) VALUES (5, 'Stephen King');
 
 CREATE TABLE country (
-  id bigint NOT NULL AUTO_INCREMENT,
+  id bigint NOT NULL,
   name varchar(255) DEFAULT NULL,
   PRIMARY KEY (id)
 );
 INSERT INTO country(id, name) VALUES (1, 'Brazil');
 
 CREATE TABLE address (
-  id bigint NOT NULL AUTO_INCREMENT,
+  id bigint NOT NULL,
   city varchar(255) DEFAULT NULL,
   state varchar(255) DEFAULT NULL,
   street varchar(255) DEFAULT NULL,
@@ -58,7 +58,7 @@ INSERT INTO customer(id, birthDate, email, fullName, password, phoneNumber, user
 INSERT INTO customer(id, birthDate, email, fullName, password, phoneNumber, username, addressId) VALUES (1001, NULL, NULL, 'João Grams', 'password', NULL, 'joaograms', 1);
 
 CREATE TABLE item (
-  id bigint NOT NULL AUTO_INCREMENT,
+  id bigint NOT NULL,
   availability int NOT NULL,
   cost decimal(19,2) NOT NULL,
   publicationDate datetime(6) DEFAULT NULL,
@@ -71,12 +71,13 @@ CREATE TABLE item (
   KEY FKfapu0tqjo1j0ks0dk0ekbbl0e (authorId),
   CONSTRAINT FKfapu0tqjo1j0ks0dk0ekbbl0e FOREIGN KEY (authorId) REFERENCES author (id)
 );
-INSERT INTO item (id, title, authorId, subject, publisher, publicationDate, cost, availability, version) VALUES (1, 'The Name of the Wind', 1,'SCIENCE FICTION', NULL, CURRENT_TIMESTAMP, 80, 15000, 0);
-INSERT INTO item (id, title, authorId, subject, publisher, publicationDate, cost, availability, version) VALUES (2, 'The Game of Thrones', 2,'SCIENCE FICTION', NULL, CURRENT_TIMESTAMP, 90, 10000, 0);
-INSERT INTO item (id, title, authorId, subject, publisher, publicationDate, cost, availability, version) VALUES (3, 'Lord of the Rings', 3,'SCIENCE FICTION', NULL, CURRENT_TIMESTAMP, 80, 50000, 0);
-INSERT INTO item (id, title, authorId, subject, publisher, publicationDate, cost, availability, version) VALUES (4, 'The Fault in our Stars', 4, 'ROMANCE', NULL, CURRENT_TIMESTAMP, 50, 20000, 0);
-INSERT INTO item (id, title, authorId, subject, publisher, publicationDate, cost, availability, version) VALUES (5, 'Paper Towns', 4, 'ROMANCE', NULL, CURRENT_TIMESTAMP, 30, 300000, 0);
-INSERT INTO item (id, title, authorId, subject, publisher, publicationDate, cost, availability, version) VALUES (6, 'It', 5, 'HORROR', NULL, CURRENT_TIMESTAMP, 70, 100000, 0);
+INSERT INTO item (id, title, authorId, subject, publisher, publicationDate, cost, availability, version) VALUES 
+(1, 'The Name of the Wind', 1,'SCIENCE FICTION', NULL, CURRENT_TIMESTAMP, 80, 15000, 0),
+(2, 'The Game of Thrones', 2,'SCIENCE FICTION', NULL, CURRENT_TIMESTAMP, 90, 10000, 0),
+(3, 'Lord of the Rings', 3,'SCIENCE FICTION', NULL, CURRENT_TIMESTAMP, 80, 50000, 0),
+(4, 'The Fault in our Stars', 4, 'ROMANCE', NULL, CURRENT_TIMESTAMP, 50, 20000, 0),
+(5, 'Paper Towns', 4, 'ROMANCE', NULL, CURRENT_TIMESTAMP, 30, 300000, 0),
+(6, 'It', 5, 'HORROR', NULL, CURRENT_TIMESTAMP, 70, 100000, 0);
 
 CREATE TABLE shopping_session (
   id bigint NOT NULL AUTO_INCREMENT,
