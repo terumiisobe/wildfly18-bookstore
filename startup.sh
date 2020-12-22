@@ -1,0 +1,1 @@
+./wildfly-18.0.0.Final/bin/standalone.sh -Djboss.bind.address=192.168.101.24 -Djboss.bind.address.management=192.168.101.24
